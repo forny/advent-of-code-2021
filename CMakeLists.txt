@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10.2)
+
+project(advent2021 CXX)
+
+add_executable(advent2021-day01 cpp/day01.cpp cpp/advent.h inputs/day1_input.txt)
+add_executable(advent2021-day02 cpp/day02.cpp cpp/advent.h inputs/day2_input.txt)
+add_executable(advent2021-day03 cpp/day03.cpp cpp/advent.h inputs/day3_input.txt)

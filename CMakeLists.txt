@@ -17,3 +17,4 @@ add_executable(advent2021-day12 cpp/day12.cpp cpp/advent.h inputs/day12_input.tx
 add_executable(advent2021-day13 cpp/day13.cpp cpp/advent.h inputs/day13_input.txt)
 add_executable(advent2021-day14 cpp/day14.cpp cpp/advent.h inputs/day14_input.txt)
 add_executable(advent2021-day15 cpp/day15.cpp cpp/advent.h inputs/day15_input.txt)
+add_executable(advent2021-day16 cpp/day16.cpp cpp/advent.h inputs/day16_input.txt)

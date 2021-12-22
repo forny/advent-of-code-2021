@@ -53,7 +53,7 @@ static inline std::string trim_copy(std::string s) {
 
 
 template <class Container>
-void split(const std::string& iString, Container& oContainer, const std::string& iDelimeters = " ")
+void split(const std::string& iString, Container& oContainer, const std::string& iDelimeters)
 {
 	std::size_t current = 0;
 	std::size_t previous = 0;
@@ -64,6 +64,14 @@ void split(const std::string& iString, Container& oContainer, const std::string&
 		current = iString.find_first_of(iDelimeters, previous);
 	}
 	oContainer.push_back(iString.substr(previous, current - previous));
+}
+
+
+std::vector<std::string> split(const std::string& iString, const std::string& iDelimeters = " ")
+{
+	std::vector<std::string> out;
+	split(iString, out, iDelimeters);
+	return out;
 }
 
 std::vector<std::string> readInputFile(const std::string& iFileName) {
